@@ -67,6 +67,8 @@ A keresési feltételek lehetnek:
 from:John Doe vagy from:johndoe@example.com
 - from: előtaggal visszaadja az összes olyan levelet, ahol a feladó neve vagy e-mail címe pontosan a from: után szereplő szöveg
 
-to:John Doe vagy to:johndoe@example.com - from: előtaggal visszaadja az összes olyan levelet,
-    ahol a címzettek között szerepel olyan, akinek a neve vagy e-mail címe pontosan a to: után szereplő szöveg
+to:John Doe vagy to:johndoe@example.com
+- to: előtaggal visszaadja az összes olyan levelet, ahol a címzettek között szerepel olyan,
+akinek a neve vagy e-mail címe pontosan a to: után szereplő szöveg
+
 egyéb esetben visszaadja az összes olyan levelet, amiben szerepel a tárgyban vagy üzenetben a megadott szó

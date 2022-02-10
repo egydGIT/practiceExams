@@ -20,4 +20,15 @@ public class OwlCounterTest {
         assertEquals(893, owlCounter.getNumberOfOwls("Somogy"));
         assertEquals(135, owlCounter.getNumberOfOwls("Zala"));
     }
+
+    @Test
+    void load2() throws IOException {
+        OwlCounter2 owlCounter = new OwlCounter2();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(OwlCounterTest.class.getResourceAsStream("owls.txt")))) {
+            owlCounter.readFromFile(reader);
+        }
+        assertEquals(1000, owlCounter.getNumberOfOwls("Bács-Kiskun"));
+        assertEquals(893, owlCounter.getNumberOfOwls("Somogy"));
+        assertEquals(135, owlCounter.getNumberOfOwls("Zala"));
+    }
 }
