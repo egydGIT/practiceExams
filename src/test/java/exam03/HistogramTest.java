@@ -21,4 +21,16 @@ public class HistogramTest {
                     "*\n", result);
         }
     }
+
+    @Test
+    void createHistogram2() throws IOException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(HistogramTest.class.getResourceAsStream("histogram.txt")))) {
+            String result = new Histogram2().createHistogram(reader);
+//            System.out.println(result);
+            assertEquals("***\n" +
+                    "****\n" +
+                    "**\n" +
+                    "*\n", result);
+        }
+    }
 }

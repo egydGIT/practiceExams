@@ -12,4 +12,11 @@ public class BoatTest {
         assertEquals("WetDreams", boat.getName());
         assertEquals(15, boat.getMaxPassengers());
     }
+
+    @Test
+    void create2() {
+        Boat2 boat = new Boat2("WetDreams", 15);
+        assertEquals("WetDreams", boat.getName());
+        assertEquals(15, boat.getMaxPassengers());
+    }
 }
