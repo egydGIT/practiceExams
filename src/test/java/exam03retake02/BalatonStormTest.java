@@ -18,4 +18,12 @@ class BalatonStormTest {
             assertEquals(List.of("Ábrahámhegy", "Balatonfüred", "Balatonszárszó"), new BalatonStorm().getStationsInStorm(reader));
         }
     }
+
+    @Test
+    void testGetStationsInStorm2() throws IOException {
+        try (BufferedReader reader =
+                     new BufferedReader(new InputStreamReader(BalatonStormTest.class.getResourceAsStream("storm.json")))) {
+            assertEquals(List.of("Ábrahámhegy", "Balatonfüred", "Balatonszárszó"), new BalatonStorm2().getStationsInStorm(reader));
+        }
+    }
 }
