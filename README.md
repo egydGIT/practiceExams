@@ -7,6 +7,6 @@ javaBackend subrepo
 - [x] [exam 03.2](https://github.com/egydGIT/practiceExams/tree/master/src/main/java/exam03retake02) - Gyakorlati vizsga 3 uv2
 - [x] [final exam](https://github.com/egydGIT/practiceExams/tree/master/src/main/java/finalExam) - Záróvizsga 
 - [x] [final exam.1](https://github.com/egydGIT/practiceExams/tree/master/src/main/java/finalExamRetake01) - Záróvizsga uv1
-- [ ] [final exam.2]() - Záróvizsga uv2
-- [ ] [qualifying exam]() - Képesítő vizsga
+- [x] [final exam.2](https://github.com/egydGIT/practiceExams/tree/master/src/main/java/finalExamRetake02) - Záróvizsga uv2
+- [x] [qualifying exam](https://github.com/egydGIT/practiceExams/tree/master/src/main/java/qualifyingExam0) - Képesítő vizsga
 - [ ] [qualifying exam.1]() - Képesítő vizsga uv1
