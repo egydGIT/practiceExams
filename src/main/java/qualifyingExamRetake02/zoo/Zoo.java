@@ -1,9 +1,6 @@
 package qualifyingExamRetake02.zoo;
 
-import finalExam.workhours.Data;
-
 import javax.sql.DataSource;
-import java.text.Collator;
 import java.util.*;
 
 public class Zoo {
@@ -79,9 +76,6 @@ public class Zoo {
 
     public Map<AnimalType, Integer> getAnimalStatistics() {
         Map<AnimalType, Integer> statistic = new HashMap<>();
-        for (AnimalType type : AnimalType.values()) {
-            statistic.put(type, 0);
-        }
         for (ZooAnimal animal : animals) {
             AnimalType actualType = animal.getType();
             if (!statistic.containsKey(actualType)) {
