@@ -9,7 +9,7 @@ class PeopleTest {
     @Test
     void getNumberOfMales() {
         People people = new People();
-        int males = people.getNumberOfMales("src/test/resources/people.csv");
+        int males = people.getNumberOfMales("src/test/resources/finalExamRetake01/people.csv");
         assertEquals(545, males);
     }
 

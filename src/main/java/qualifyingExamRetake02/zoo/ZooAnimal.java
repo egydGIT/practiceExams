@@ -8,8 +8,8 @@ public abstract class ZooAnimal implements Comparable<ZooAnimal>{
     private int length;
     private long weight;
 
-    public ZooAnimal(String name) {                              // konstruktor overloading: eltérő paraméter lista
-        this(name, 0, 0L);                          // this: chaining, egymást hívják
+    public ZooAnimal(String name) {
+        this(name, 0, 0L);
     }
 
     public ZooAnimal(String name, int length) {
@@ -32,7 +32,7 @@ public abstract class ZooAnimal implements Comparable<ZooAnimal>{
     }
 
     @Override
-    public boolean equals(Object o) {                           // equals, hashCode: obj. összehasonlításhoz kell
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ZooAnimal animal = (ZooAnimal) o;
@@ -56,7 +56,7 @@ public abstract class ZooAnimal implements Comparable<ZooAnimal>{
         return weight;
     }
 
-    public abstract AnimalType getType();                   // abstzact met., implementáció a leszármazott oszt-ban
+    public abstract AnimalType getType();
 }
 
 

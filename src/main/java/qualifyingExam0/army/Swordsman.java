@@ -1,7 +1,5 @@
 package qualifyingExam0.army;
 
-import java.util.Random;
-
 public class Swordsman extends MilitaryUnit{
 
     private boolean hasScutum;

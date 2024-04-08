@@ -1,11 +1,11 @@
 package qualifyingExamRetake02.zoo;
 
-public class Lion extends ZooAnimal{    // is-a, öröklődés
+public class Lion extends ZooAnimal{
 
-    private AnimalType type;            // has-a, kompozíció
+    private AnimalType type;
 
     public Lion(String name) {
-        super(name);                    // super: ősben lévő egyik konstuktor hívása az 1. sorban
+        super(name);
         this.type = AnimalType.LION;
     }
 
